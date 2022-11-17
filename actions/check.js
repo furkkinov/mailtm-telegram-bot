@@ -17,7 +17,6 @@ module.exports = {
             token = token.data.token;
             token = token.replace("\r\n", "");
             let ab = token;
-            console.log(token);
             axios.get("https://api.mail.tm/messages", { headers: { Authorization: "Bearer " + token } }).then(r => {
                 if (r.data["hydra:member"].length == 0) {
                     bot.answerCallbackQuery(query.id, {
@@ -32,7 +31,6 @@ module.exports = {
                         if(d[c]) {
                             let m = d[c];
                             c++;
-                            console.log(m);
                             await bot.sendMessage(query.message.chat.id, `*${m.subject}*\nFrom: \`${m.from.address}\`\nDate: \`${m.createdAt}\``, {
                                 parse_mode: 'Markdown',
                                 reply_markup: JSON.stringify({
