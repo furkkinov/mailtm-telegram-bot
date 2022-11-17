@@ -1,4 +1,3 @@
-const TelegramBot = require('node-telegram-bot-api');
 const bot = require("../bot.js");
 const Mailjs = require("@cemalgnlts/mailjs");
 const randomWords = require('random-words');

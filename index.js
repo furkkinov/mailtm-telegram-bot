@@ -1,6 +1,3 @@
-const Mailjs = require("@cemalgnlts/mailjs");
-const mailjs = new Mailjs();
-const TelegramBot = require('node-telegram-bot-api');
 const bot = require("./bot.js");
 const fs = require("fs");
 let commands = {};
