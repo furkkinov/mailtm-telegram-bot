@@ -1,6 +1,5 @@
 const bot = require("../bot.js");
 const JSONdb = require('simple-json-db');
-const axios = require("axios");
 const Mailjs = require("@cemalgnlts/mailjs");
 const mailjs = new Mailjs();
 module.exports = {
